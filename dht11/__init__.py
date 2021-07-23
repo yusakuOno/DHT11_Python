@@ -21,6 +21,8 @@ class DHT11Result:
     def is_valid(self):
         return self.error_code == DHT11Result.ERR_NO_ERROR
 
+    def return_error_code(self):
+        return self.error_code
 
 class DHT11:
     'DHT11 sensor reader class for Raspberry'
